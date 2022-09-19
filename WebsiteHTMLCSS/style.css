@@ -1,0 +1,302 @@
+body {
+    font-family: Verdana medium, Helvetica, Arial; 
+    background-color: #fafafa;
+    font-size: 1em;
+    margin: 40px auto;
+    max-width: 850px;
+    color: #2e045e
+}
+
+
+.whoami{
+    font-family: Verdana medium, Helvetica, Arial; 
+    font-size: 30px;
+}
+.line{
+    font-size: 30px;
+    font-weight: bolder;
+    color:#2e045e
+}
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    text-align: left;
+    color:white
+
+}
+
+hr {
+    border-width: 0;
+}
+
+.rectangle{
+    width:100%;
+    height:100px;
+    background:#2e045e;
+    border-radius: 25px;
+    padding: 3%;
+    color: white;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.img1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    cursor: pointer;
+}
+
+/* wave animation */
+.wave {
+    animation-name: wave-animation;  
+    animation-duration: 2.5s;        
+    animation-iteration-count: infinite;  
+    transform-origin: 70% 70%;       
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  
+    100% { transform: rotate( 0.0deg) }
+  }
+/* wave animation close */
+
+
+/* nav-bar */
+.navbar { 
+    width: 100%;
+    overflow: auto;
+    padding-left: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+.navbar li {
+    display: inline;
+}
+.navbar li a:link, a:visited {
+    padding: 7px 9px;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	width: 10%;
+    display: inline-block;
+    border-radius: 1em;
+    background-color: #2e045e;
+    color: #FAF9F6
+}
+.navbar li a:hover, a:active {
+    background-color: #2e2e2e;
+}
+/* nav-bar close */
+
+
+/* about */
+#about{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    text-align: center;
+    color: #2e2e2e;
+}
+
+.cs{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    text-align: left;
+    color: #2e045e;
+    font-weight: bolder;
+
+}
+/* about close*/
+
+/* project 1 */
+.container{
+    display: inline-block;
+    width:30% auto;
+    height: 100%;
+    position: relative;
+}
+
+.proj1{
+    width:100%;
+    height:100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background: #2e2e2e;
+    cursor: pointer;
+}
+
+.content2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.content2 h3{
+    font-size: large;
+    text-align: center;
+    font-family: "Menlo", sans-serif;
+}
+.content2 h4{
+    font-family: "Menlo", sans-serif;
+    font-size: small;
+    text-align: center;
+}
+.content2 h5{
+    font-family: "Menlo", sans-serif;
+    font-size: large;
+    text-align: center;
+}
+.container:hover .overlay{
+    opacity: 1;
+}
+.py{
+    color:orange
+}
+/* project 1 close */
+
+
+/*contact pg */
+.emailBox{
+    width:500px;
+    height:180px;
+    position: relative;
+    left: 20%;
+    background-color:#000000;
+    font-size: xx-large;
+    background-color: transparent;
+    border-width: 6px;
+    border-style:solid;
+    border-color: #2e045e;
+    color: #2e2e2e;
+    text-align: center;
+    padding: 20px;
+    border-radius: 25px;
+}
+.email{
+    text-decoration: none; 
+    color:white;
+    background-color: #2e045e;
+    padding: 15px;
+    text-align: center;
+    font-size: small;
+    border-radius: 25px;
+}
+.email:hover{
+    background-color: #2e2e2e;
+}
+.emailBox h5{
+    font-size: small;
+}
+
+
+.linkedinBox{
+    width:500px;
+    height:180px;
+    position: relative;
+    left: 20%;
+    background-color:#000000;
+    font-size: xx-large;
+    background-color: transparent;
+    border-width: 6px;
+    border-style:solid;
+    border-color: #2e045e;
+    color: #2e2e2e;
+    text-align: center;
+    padding: 20px;
+    border-radius: 25px;
+}
+.linkedin{
+    text-decoration: none; 
+    color:white;
+    background-color: #2e045e;
+    padding: 15px;
+    text-align: center;
+    font-size: small;
+    border-radius: 25px;
+    cursor: pointer;
+
+    
+}
+.linkedin:hover{
+    background-color: #2e2e2e;
+}
+.linkedinBox h5{
+    font-size: small;
+}
+
+
+.githubBox{
+    width:500px;
+    height:180px;
+    position: relative;
+    left: 20%;
+    background-color:#000000;
+    font-size: xx-large;
+    background-color: transparent;
+    border-width: 6px;
+    border-style:solid;
+    border-color: #2e045e;
+    color: #2e2e2e;
+    text-align: center;
+    padding: 20px;
+    border-radius: 25px;
+}
+.gitHub{
+    text-decoration: none; 
+    color:white;
+    background-color: #2e045e;
+    padding: 15px;
+    text-align: center;
+    font-size: small;
+    border-radius: 25px;
+    cursor: pointer;
+
+    
+}
+.gitHub:hover{
+    background-color: #2e2e2e;
+}
+.githubBox h5{
+    font-size: small;
+}
+/* contact pg close */
+
+   
+/* footer */
+.footer{
+    color: #d5d5d3;
+    text-align: left;
+}
+
+.name{
+    font-size: small;
+}
+/* footer close*/
+
+
+
