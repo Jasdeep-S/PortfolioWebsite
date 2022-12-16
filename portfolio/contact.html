@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Jasdeep Sidhu - Contact</title>
+    <!--CSS stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--reponsive website--> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!--browser icon-->
+    <link rel="shortcut icon" type="x-icon" href="imgs/centerImg.png"> 
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <!-- Nav-Bar -->
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo"><a href="home.html">Jasdeep Sidhu</a></div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <li><a href="home.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                <li><a href="work.html"><i class="fa fa-code" aria-hidden="true"></i> Work</a></li>
+                <li><a href="contact.html"><i class="fa fa-pencil" aria-hidden="true"></i> Contact</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        const navbar = document.querySelector(".navbar");
+        const menu = document.querySelector(".menu-list");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = ()=>{
+            menu.classList.add("active");
+            menuBtn.classList.add("hide");
+
+        }
+        cancelBtn.onclick = ()=>{
+            menu.classList.remove("active");
+            menuBtn.classList.remove("hide");
+
+        }
+
+        window.onscroll = ()=>{
+            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+    </script>
+    <!-- Nav-Bar Close -->
+
+
+    <!-- Header -->
+    <section class="background">
+        <div class="head2">Lets Work!</div>
+        <p class="subhead2">Feel free to contact me via E-mail or LinkedIn!</p>
+    </section>
+    <!-- Header Close -->
+
+    <!--Email Section-->
+
+
+    <section class="cont">
+        <a id="circle" href="mailto:jsidhu1827@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <div id="circle" onclick="location.href='http://www.linkedin.com/in/jasdeepsidhu8'"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+        <div id="circle" onclick="location.href='http://www.github.com/Jasdeep-S'"><i class="fa fa-github" aria-hidden="true"></i></div>
+    </section>
+
+    <section class="footer">
+        
+        <p class="foot">
+            <span class="name"> &copy; Jasdeep Sidhu 2022</span>
+            <br>
+            <span class="pgnm">CONTACT</span>
+        </p>
+    </section>
+</body>
